@@ -1,0 +1,460 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(205, 204, 204);
+    background-size:cover;
+    /* background-repeat: no-repeat; */
+}
+header{
+    width: 100%;
+    height: 80px;
+    background-color: #363333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+.logo{
+    height: 28px;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: bold;
+    color: aliceblue;
+}
+.hamburger{
+    display: none;
+}
+.navbar ul{
+    display: flex;
+}
+.navbar ul li a{
+    display: block;
+    color: aliceblue;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+.navbar ul li a:hover{
+    color: #11101b;
+    background-color: aliceblue;
+}
+.navbar ul li a.active{
+    color: #11101b;
+    background-color: aliceblue;
+}
+@media only screen and (max-width:1320px){
+    header{
+        padding: 0 50px;
+    }
+}
+@media only screen and (max-width:1000px){
+    header{
+        padding: 0 30px;
+    }
+}
+@media only screen and (max-width:900px){
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger .line{
+        width: 30px;
+        height: 3px;
+        background-color: aliceblue;
+        margin: 6px 0;
+    }
+    .navbar{
+        height: 320px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background-color: #11101b;
+        transition: 0.2s;
+        overflow: hidden;
+    }
+    .navbar.active{
+        height: 320px;
+    }
+    .navbar.active ul{
+        opacity: 1;
+    }
+    .navbar ul{
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.2s;
+        opacity: 0;
+    }
+    .navbar ul li a{
+        margin: 12px;
+        color: red;
+    }
+    .container{
+        margin-top:320px ;
+    }
+}
+/* Home portion  */
+#home{
+    height: 555px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.skill{
+    display: inline-block;   
+    margin-left: 10%;
+    text-align: center;
+}
+/* #home .image{} */
+
+.name{
+    font-size: 40px;
+    color: #C2185B;
+    ;
+    font-weight: normal;
+}
+.role{
+    font-size: 60px;
+    color: rgb(224, 173, 106);
+}
+.role span{
+    color: blueviolet;
+    
+}
+.description{
+    font-size: 20px;
+    color: #C2185B;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+.hire{
+    border: 2px solid black;
+    color: #151414;
+    text-decoration: none;
+    background-color: #949445;
+    font-size: 35px;
+}
+a.hire:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(230, 199, 199);
+    text-decoration: underline;
+}
+.image{
+    height: 325px;
+    width: 325px;
+    /* border: 3px solid grey ; */
+    border-radius: 50%; ;
+    background-image: url(tis.jpeg);
+    background-size: cover;
+    margin-right: 75px;    
+}
+@media only screen and (max-width:1320px){
+    .image{
+        margin-right: 40px;
+    }
+    .skill{
+        margin-left: 5%;
+    }
+}
+@media only screen and (max-width:1000px){
+    .image{
+        margin-right: 20px;
+    }
+    .skill{
+        margin-left: 2.5%;
+    }
+}
+@media only screen and (max-width:900px){
+    .name{
+        font-size: 20px;
+    }
+    .role{
+        font-size: 30px;
+    }
+    .description{
+        font-size: 15px;    
+    }
+    .hire{
+        font-size: 17px;
+    }
+    .image{
+        height: 160px;
+        width: 160px;
+    }
+    #home{
+        height: 320px;
+    }
+}
+@media only screen and (max-width:600px){
+    .image{
+        height: 120px;
+        width: 120px;
+    }
+    .name{
+        font-size: 15px;
+    }
+    .role{
+        font-size: 25px;
+    }
+    .description{
+        font-size: 10px;    
+    }
+    .hire{
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width:350px){
+    .image{
+        height: 80px;
+        width: 80px;
+    }
+    .name{
+        font-size: 12px;
+    }
+    .role{
+        font-size: 22px;
+    }
+    .description{
+        font-size: 7px;    
+    }
+    .hire{
+        font-size: 9px;
+    }
+}
+#about{
+    /* background-color: rgb(120, 120, 99); */
+    /* border: 3px solid black; */
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 137px;
+}
+#about h1{
+ /* text-decoration: underline; */
+ font-size: 40px;
+ font-weight: bold;
+ color: rgb(96, 75, 118);
+ margin-left: 4%;
+ margin-bottom: 5px;
+}
+#about p{
+    margin-left: 80px;
+    margin-right: 80px;
+    font-size: 18px;
+    width: 80%;
+    color:#3f3539;
+}
+
+@media only screen and (max-width:1320px){
+    #about h1{
+        font-size:35px ;
+        margin-left: 3%;
+}
+#about p{
+    margin-left: 60px;
+    margin-right: 60px;
+    font-size: 17px;
+}
+}
+@media only screen and (max-width:1000px){
+    #about h1{
+        font-size:30px ;
+        margin-left: 2%;
+}
+#about p{
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 15px;
+}
+}
+@media only screen and (max-width:900px){
+    #about h1{
+        font-size:25px ;
+        margin-left: 1%;
+}
+#about p{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 9px;
+}
+}
+/* project section  */
+#project{
+    margin-bottom: 100px;
+}
+#project h1{
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(96, 75, 118);   
+     margin-left: 4%;
+    margin-bottom: 5px;
+}
+.project h3{
+    text-decoration:underline;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 25px
+}
+.project1{
+    display: flex;
+
+}
+.project1 p{
+    margin-left: 20px;
+    margin-right: 20px;
+    /* width:50% ; */
+    font-size:20px ;
+    text-align: center;
+}
+.project a{
+    text-decoration: underline;
+}
+.project1 img{
+    margin-left: 20px;
+    border: 2px solid black;
+    width:500px;
+    height:300px;
+}
+@media only screen and (max-width:1320px){
+    #project h1{
+        font-size:35px ;
+        margin-left: 3%;
+    }
+    .project h3{
+        font-size: 30px;
+    }
+    .project1 p{
+        
+    margin-left: 15px;
+    font-size: 17px;
+    margin-right: 15px;
+    }
+    .project1 img{
+        margin-left: 20px;
+        border: 2px solid black;
+        /* width:450px;
+        height:250px; */
+    }
+}
+@media only screen and (max-width:920px){
+    #project h1{
+        font-size:25px ;
+        margin-left: 2%;
+    }
+    .project h3{
+        font-size: 20px;
+    }
+    .project1 p{   
+    margin-left: 5px;
+    font-size: 12px;
+    margin-right: 10px;
+    text-align: center;
+    }
+    .project1 img{
+        margin-left: 5px;
+        border: 2px solid black;
+        width:150px;
+        height:150px;
+    }
+}
+/* contact section  */
+#contact{
+    padding-top: 40px;
+    /* margin-top: 35px */
+}
+#contact h1{
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(96, 75, 118);   
+     margin-left: 4%;
+    margin-bottom: 5px;
+}
+#contact h3{
+    text-decoration: underline;
+    font-size: 35px;
+    margin-bottom: 25px;
+    text-align: center;
+    margin-top: 20px;
+}
+.contact{
+    border: 3px solid black;
+    margin:0 50px 90px 50px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 25px;    
+}
+.contact a img{
+    height: 60px;
+}
+.contact a:hover{
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 3px;
+}
+@media only screen and (max-width:1320px){
+    #contact h1{
+        font-size:35px ;
+        margin-left: 3%;
+    }
+    #contact h3{
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width:1000px){
+    #contact h1{
+        font-size:30px ;
+        margin-left: 2%;
+    }
+    #contact h3{
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width:600px){
+    #contact h1{
+        font-size: 25px; 
+         margin-left: 2%;
+    }
+    #contact h3{
+        font-size: 20px;
+    }
+    .contact{
+        border: 3px solid black;
+        margin:0 20px 90px 20px;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 15px;    
+    }
+    .contact a img{
+        height: 45px;
+        width: 45px;
+    }
+    
+}
+
+#footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: black;
+    color: wheat;
+}
+@media only screen and (max-width:330px){
+  #footer{
+    font-size: 12px;
+  }  
+  .contact a img{
+    height: 30px;
+    width: 30px;
+} 
+}
